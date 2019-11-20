@@ -7,7 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestBankController {
 	@RequestMapping("/")
     public String index() {
-        return "Greetings from Spring Boot!";
+        return "index";
     }
+	
+	
 
 }
