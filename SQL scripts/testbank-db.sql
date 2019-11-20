@@ -1,0 +1,58 @@
+DROP DATABASE IF EXISTS testbank_db;
+
+CREATE DATABASE testbank_db;
+
+USE testbank_db;
+
+CREATE TABLE User (
+id INT AUTO_INCREMENT PRIMARY KEY,
+firstname VARCHAR(30) NOT NULL,
+lastname VARCHAR(30) NOT NULL,
+email VARCHAR(50),
+password varchar(30),
+user_type INT,
+dob DATE,
+phone_number VARCHAR(30),
+created_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE Course (
+course_id INT AUTO_INCREMENT PRIMARY KEY,
+course_code VARCHAR(15),
+professor_id INT,  
+created_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+FOREIGN KEY (professor_id) REFERENCES User(id)
+);
+
+CREATE TABLE Test_module (
+test_id INT AUTO_INCREMENT PRIMARY KEY,
+course_id INT, 
+description VARCHAR(500),
+no_of_question INT, 
+created_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+FOREIGN KEY (course_id) REFERENCES Course(course_id)
+);
+
+CREATE TABLE Question (
+question_id INT AUTO_INCREMENT PRIMARY KEY,
+test_id INT NOT NULL, 
+description VARCHAR(500),
+options VARCHAR(1000),
+answer VARCHAR(1000), 
+grade DOUBLE,
+created_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+FOREIGN KEY (test_id) REFERENCES Test_module(test_id)
+);
+
+CREATE TABLE Module (
+module_id INT AUTO_INCREMENT PRIMARY KEY,
+student_id INT NOT NULL, 
+test_id INT NOT NULL, 
+course_id INT, 
+report_name VARCHAR(255) NOT NULL, 
+student_grade DOUBLE,
+created_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+FOREIGN KEY (student_id) REFERENCES User(id),
+FOREIGN KEY (test_id) REFERENCES Test_module(test_id),
+FOREIGN KEY (course_id) REFERENCES Course(course_id)
+);
