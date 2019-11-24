@@ -11,4 +11,6 @@ import testbank.model.Course;
 public interface CourseRepository extends JpaRepository<Course, Integer>{
 
 	List<Course> findCourseById (int id);
+	
+	List<Course> findCoursesByCourseCode (String courseCode);
 }

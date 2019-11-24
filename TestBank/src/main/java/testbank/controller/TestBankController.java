@@ -10,6 +10,8 @@ public class TestBankController {
         return "index";
     }
 	
-	
-
+	@RequestMapping("/createStudent")
+	public void createStudent() {
+		
+	}
 }
