@@ -16,9 +16,9 @@ public class CourseService{
 		this.courseRepository = courseRepository;
 	}
 	
-	public List<Course> findCourseById (int courseId) {
-		return courseRepository.findCourseById(courseId);
-	}
+//	public List<Course> findCourseById (int courseId) {
+//		return courseRepository.findCourseById(courseId);
+//	}
 	
 	public List<Course> findCourseByCourseCode (String courseCode){
 		return courseRepository.findCoursesByCourseCode(courseCode);

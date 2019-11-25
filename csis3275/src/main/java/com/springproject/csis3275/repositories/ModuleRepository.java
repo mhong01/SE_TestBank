@@ -10,5 +10,5 @@ import com.springproject.csis3275.model.Module;
 @Repository
 public interface ModuleRepository extends JpaRepository<Module, Integer>{
 
-	List<Module> findModuleById (int id);
+//	List<Module> findModuleById (int id);
 }

@@ -12,8 +12,12 @@ public class TestModuleService {
 
 	private TestModuleRepository testModuleRepository;
 
-	public List<TestModule> findTestModuleById (int id){
-		return testModuleRepository.findTestModuleById(id);
+//	public List<TestModule> findTestModuleById (int id){
+//		return testModuleRepository.findTestModuleById(id);
+//	}
+	
+	public TestModuleService (TestModuleRepository testModuleRepository) {
+		this.testModuleRepository = testModuleRepository;
 	}
 	
 	public List<TestModule> findAllTestModule (){

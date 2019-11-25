@@ -1,19 +1,24 @@
 package com.springproject.csis3275.controllers;
 
-import org.springframework.stereotype.Controller;
+import java.util.List;
 
-//import testbank.services.ModuleService;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+import com.springproject.csis3275.model.Module;
+import com.springproject.csis3275.services.ModuleService;
+
+@RestController
 public class ModuleController {
 	
-//	@Autowired
-//	ModuleService moduleService;
+	private ModuleService moduleService;
+    public ModuleController(ModuleService moduleService) {
+        this.moduleService = moduleService;
+    }
 
-//	@Override
-//	public String getErrorPath() {
-//		// TODO Auto-generated method stub
-//		return null;
-//	}
+    @RequestMapping("/api/modules/")
+    public List<Module> findAllModules (){
+    	return moduleService.findAll();
+    }
 
 }

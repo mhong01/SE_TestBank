@@ -12,9 +12,9 @@ public class ModuleService {
 
 	private ModuleRepository moduleRepository;
 	
-	public List<Module> findModuleById(int id){
-		return moduleRepository.findModuleById(id);
-	}
+//	public List<Module> findModuleById(int id){
+//		return moduleRepository.findModuleById(id);
+//	}
 	
 	public List<Module> findAll(){
 		return moduleRepository.findAll();

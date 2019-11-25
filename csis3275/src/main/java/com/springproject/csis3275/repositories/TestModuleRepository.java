@@ -11,5 +11,5 @@ import com.springproject.csis3275.model.TestModule;
 @Repository
 public interface TestModuleRepository extends JpaRepository<TestModule, Integer>{
 	
-	List<TestModule> findTestModuleById(int id);
+//	List<TestModule> findTestModuleById(int id);
 }

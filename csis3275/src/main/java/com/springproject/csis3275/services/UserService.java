@@ -13,6 +13,10 @@ public class UserService {
 
 	private UserRepository userRepository;
 	
+	public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
 	public List<User> findUserById (int id){
 		return userRepository.findUserById(id);
 	}

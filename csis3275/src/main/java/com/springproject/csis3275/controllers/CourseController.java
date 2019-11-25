@@ -1,18 +1,25 @@
 package com.springproject.csis3275.controllers;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
+import java.util.List;
 
-@Controller
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.springproject.csis3275.model.Course;
+import com.springproject.csis3275.services.CourseService;
+
+@RestController
 public class CourseController {
 	
-//	@Autowired
-//	private CourseService courseService;
+	private CourseService courseService;
+    public CourseController(CourseService courseService) {
+        this.courseService = courseService;
+    }
 	
-	@RequestMapping("/")
-	public String indexAction(Model model) {
-		return "Hello";
+	@RequestMapping("/api/courses/")
+	public List<Course> getCourses(Course courseØ) {
+		
+		return courseService.findAllCourses();
 	}
 	
 }

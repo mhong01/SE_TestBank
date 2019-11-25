@@ -10,5 +10,5 @@ import com.springproject.csis3275.model.Question;
 @Repository
 public interface QuestionRepository extends JpaRepository<Question, Integer> {
 
-	List<Question> findQuestionById(int id);
+//	List<Question> findQuestionById(int id);
 }
