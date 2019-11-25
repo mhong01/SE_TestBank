@@ -3,11 +3,121 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+  font-size: 120%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+header h1 {
+  display: inline-block;
+  text-align: center;
+  margin-left: 2em;
+}
+
+nav {
+  display: inline-block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 1.2rem;
+}
+
+.box {
+  border: 1px solid gray;
+  margin: 1em auto;
+  padding: 1em;
+  width: 280px;
+}
+
+.box-rounded {
+  position: relative;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.box-title {
+  position: absolute;
+  display: inline-block;
+  background: dodgerblue;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 2px 6px;
+  left: 12px;
+  top: -14px;
+}
+
+.box hr {
+  border-top: 1px solid lightskyblue;
+}
+
+.box-field {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  border: 1px solid gray;
+  font-size: 1.2rem;
+  margin-top: 0.3em;
+  padding: 0.2em;
+}
+
+table {
+  margin: 1em 0;
+  width: 100%;
+}
+
+table td {
+  padding: 0.3em 0;
+}
+
+tbody td {
+  border-top: 1px solid gray;
+}
+
+.icons {
+  text-align: right;
+}
+
+ol li {
+  margin-bottom: 1em;
+}
+
+button {
+  border-style: none;
+  border-radius: 8px;
+  background-color: lightskyblue;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 0.3em 0.5em;
+}
+
+button:active {
+  background-color: dodgerblue;
+}
+
+.box-rounded .button-div {
+  text-align: right;
+}
+
+.box-rounded button {
+  display: inline-block;
+  padding: 0.5em 0.8em;
+}
+
+.box-rounded button.gray {
+  background-color: lightgray;
+}
+
+.box-rounded button.gray:active {
+  background-color: gray;
 }
