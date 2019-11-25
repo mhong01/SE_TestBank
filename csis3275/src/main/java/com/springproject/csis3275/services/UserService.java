@@ -1,8 +1,9 @@
-package com.hongle.springproject.csis3275.services;
+package com.springproject.csis3275.services;
 
-import com.hongle.springproject.csis3275.model.User;
-import com.hongle.springproject.csis3275.repositories.UserRepository;
 import org.springframework.stereotype.Service;
+
+import com.springproject.csis3275.model.User;
+import com.springproject.csis3275.repositories.UserRepository;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.hongle.springproject.csis3275;
+package com.springproject.csis3275;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

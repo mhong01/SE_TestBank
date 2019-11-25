@@ -1,9 +1,10 @@
-package com.hongle.springproject.csis3275.controllers;
+package com.springproject.csis3275.controllers;
 
-import com.hongle.springproject.csis3275.model.User;
-import com.hongle.springproject.csis3275.services.UserService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.springproject.csis3275.model.User;
+import com.springproject.csis3275.services.UserService;
 
 import java.util.List;
 

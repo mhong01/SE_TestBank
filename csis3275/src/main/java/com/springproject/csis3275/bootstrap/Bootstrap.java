@@ -1,10 +1,11 @@
-package com.hongle.springproject.csis3275.bootstrap;
+package com.springproject.csis3275.bootstrap;
 
-import com.hongle.springproject.csis3275.model.User;
-import com.hongle.springproject.csis3275.repositories.UserRepository;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
+
+import com.springproject.csis3275.model.User;
+import com.springproject.csis3275.repositories.UserRepository;
 
 @Component
 public class Bootstrap implements ApplicationListener<ContextRefreshedEvent> {

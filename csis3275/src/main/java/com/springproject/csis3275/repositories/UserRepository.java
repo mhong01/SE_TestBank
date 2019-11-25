@@ -1,8 +1,9 @@
-package com.hongle.springproject.csis3275.repositories;
+package com.springproject.csis3275.repositories;
 
-import com.hongle.springproject.csis3275.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import com.springproject.csis3275.model.User;
 
 import java.util.List;
 

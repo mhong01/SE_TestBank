@@ -1,4 +1,4 @@
-package com.hongle.springproject.csis3275.model;
+package com.springproject.csis3275.model;
 
 import javax.persistence.*;
 
