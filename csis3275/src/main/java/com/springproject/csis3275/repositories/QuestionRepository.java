@@ -5,10 +5,10 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.springproject.csis3275.model.User;
+import com.springproject.csis3275.model.Question;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, Integer>{
+public interface QuestionRepository extends JpaRepository<Question, Integer> {
 
-	List<User> findUserById(int id);
+	List<Question> findQuestionById(int id);
 }

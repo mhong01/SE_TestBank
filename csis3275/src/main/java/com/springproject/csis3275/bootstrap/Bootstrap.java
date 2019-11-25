@@ -21,22 +21,22 @@ public class Bootstrap implements ApplicationListener<ContextRefreshedEvent> {
     }
 
     private void initData() {
-        User hongle = new User();
-        hongle.setFullName("Hong Le");
-        hongle.setEmail("hong.le@gmail.com");
-        hongle.setUserName("hongle");
-        hongle.setPassword("doconmeo");
-        hongle.setEnabled(true);
-
-        User quangle = new User();
-        quangle.setFullName("Quang Le");
-        quangle.setEmail("quang.le@gmail.com");
-        quangle.setUserName("quangle");
-        quangle.setPassword("doconmeo");
-        quangle.setEnabled(true);
-
-        userRepository.save(hongle);
-        userRepository.save(quangle);
+//        User hongle = new User();
+//        hongle.setFullName("Hong Le");
+//        hongle.setEmail("hong.le@gmail.com");
+//        hongle.setUserName("hongle");
+//        hongle.setPassword("doconmeo");
+//        hongle.setEnabled(true);
+//
+//        User quangle = new User();
+//        quangle.setFullName("Quang Le");
+//        quangle.setEmail("quang.le@gmail.com");
+//        quangle.setUserName("quangle");
+//        quangle.setPassword("doconmeo");
+//        quangle.setEnabled(true);
+//
+//        userRepository.save(hongle);
+//        userRepository.save(quangle);
     }
 
 
