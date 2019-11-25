@@ -27,36 +27,56 @@ public class Bootstrap implements ApplicationListener<ContextRefreshedEvent> {
 
     private void initData() {
         User hongle = new User();
-        hongle.setFirstName("Hong");
+        hongle.setFullName("Minh Hong Le");
         hongle.setEmail("hong.le@gmail.com");
-        hongle.setLastName("Le");
+        hongle.setStudentId("300299969");
         hongle.setUserType(1);
-        hongle.setPassword("doconmeo");
+        hongle.setPassword("root");
+        hongle.setCourseCode("CSIS3275");
         
-        User tomyDang = new User();
-        tomyDang.setFirstName("Tomy");
-        tomyDang.setEmail("tommy.dang@gmail.com");
-        tomyDang.setLastName("Dang");
-        tomyDang.setUserType(1);
-        tomyDang.setPassword("root");
+       
+        User vinicius = new User();
+        vinicius.setFullName("Matos Alves, Vinicius");
+        vinicius.setEmail("vinicius@gmail.com");
+        vinicius.setStudentId("300292888");
+        vinicius.setUserType(1);
+        vinicius.setPassword("root");
+        vinicius.setCourseCode("CSIS3275");
         
-
-        User quangle = new User();
-        quangle.setFirstName("Quang");
-        quangle.setEmail("quang.le@gmail.com");
-        hongle.setLastName("Le");
-        hongle.setUserType(1);
-        quangle.setPassword("doconmeo");
+        User Elvis = new User();
+        Elvis.setFullName("Akumbom, Elvis Vukesu");
+        Elvis.setEmail("Elvis@gmail.com");
+        Elvis.setStudentId("300292888");
+        Elvis.setUserType(1);
+        Elvis.setPassword("root");
+        Elvis.setCourseCode("CSIS3275");
+        
+        User Dang = new User();
+        Dang.setFullName("Dang, Huu Tu Anh");
+        Dang.setEmail("Dang@gmail.com");
+        Dang.setStudentId("300305726");
+        Dang.setUserType(1);
+        Dang.setPassword("root");
+        Dang.setCourseCode("CSIS3275");
+        
+        User Pylayev = new User();
+        Pylayev.setFullName("Pylayev, Evgeny");
+        Pylayev.setEmail("Pylayev@gmail.com");
+        Pylayev.setStudentId("300301386");
+        Pylayev.setUserType(1);
+        Pylayev.setPassword("root");
+        Pylayev.setCourseCode("CSIS3275");
         
         User professor = new User();
-        professor.setFirstName("Mahmood");
-        professor.setLastName("Al-Humaimidi");
+        professor.setFullName("Mahmood, Al-Humaimidi");
         professor.setUserType(0);
         professor.setEmail("");
 
         userRepository.save(hongle);
-        userRepository.save(tomyDang);
-        userRepository.save(quangle);
+        userRepository.save(vinicius);
+        userRepository.save(Elvis);
+        userRepository.save(Dang);
+        userRepository.save(Pylayev);
         userRepository.save(professor);
         
         initCourseData(professor);

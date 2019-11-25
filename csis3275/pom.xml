@@ -8,7 +8,7 @@
 		<version>2.2.1.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.hongle.springproject</groupId>
+	<groupId>com.springproject</groupId>
 	<artifactId>csis3275</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>csis3275</name>

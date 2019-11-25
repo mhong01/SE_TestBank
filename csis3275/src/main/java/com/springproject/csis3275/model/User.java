@@ -15,14 +15,15 @@ public class User {
 	@Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id;
-	private String firstName;
-	private String lastName;
+	private String fullName;
+	private String studentId;
 	private String email;
 	private String password;
 	private int userType;
 	private Date dob;
 	private String phoneNumber;
 	private Date createdDate;
+	private String courseCode;
 	
 	
 	public int getId() {
@@ -31,18 +32,7 @@ public class User {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getFirstName() {
-		return firstName;
-	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-	public String getLastName() {
-		return lastName;
-	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
+
 	public String getEmail() {
 		return email;
 	}
@@ -78,6 +68,24 @@ public class User {
 	}
 	public void setCreatedDate(Date createdDate) {
 		this.createdDate = createdDate;
+	}
+	public String getFullName() {
+		return fullName;
+	}
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
+	}
+	public String getCourseCode() {
+		return courseCode;
+	}
+	public void setCourseCode(String courseCode) {
+		this.courseCode = courseCode;
+	}
+	public String getStudentId() {
+		return studentId;
+	}
+	public void setStudentId(String studentId) {
+		this.studentId = studentId;
 	}
 	
 	

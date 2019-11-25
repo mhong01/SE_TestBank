@@ -20,4 +20,9 @@ public class UserController {
     public List<User> greeting() {
         return userService.findAllUsers();
     }
+    
+    @RequestMapping("/api/students/")
+    public List<User> findAllStudents() {
+        return userService.findAllStudents();
+    }
 }
